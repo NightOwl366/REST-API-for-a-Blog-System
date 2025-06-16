@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <form action="/auth/signup" method="POST">
+      <img class="img" src="/img/person.svg" alt="User Icon" />
+
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required />
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" name="phone" placeholder="123 456 7890" required />
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" name="email" placeholder="Enter Email" required />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Minimum 6 characters" required />
+      </div>
+
+      <button type="submit">Sign Up</button>
+      <p>Already have an Account? <a href="/login">Login</a></p>
+    </form>
+  </div>
+</body>
+</html>
