@@ -44,7 +44,7 @@ const startServer = async () => {
 startServer();
 
 
-app.get("/signup", (req, res) => {
+app.get("/", (req, res) => {
   res.render("signUp");
 });
 
